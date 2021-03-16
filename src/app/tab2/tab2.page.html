@@ -17,4 +17,9 @@
  <ion-button (click)="result()">Submit</ion-button>
  <br>
  {{test}}
+ <ng-template *ngIf="betul; then templatetrue; else templatefalse"></ng-template>
+
+  <ng-template #templatetrue>
+    <img src="assets/icon/getImage.jpg">
+  </ng-template>
 </ion-content>
